@@ -44,7 +44,8 @@
     "prepublish": "npm run build; cp ./declarations/moment-range.js.flow ./dist",
     "preversion": "npm run flow && npm run lint && npm run test",
     "test": "karma start ./karma.conf.js",
-    "version": "npm run build; cp ./declarations/moment-range.js.flow ./dist"
+    "version": "npm run build; cp ./declarations/moment-range.js.flow ./dist",
+    "prepare": "npm run prepublish"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
